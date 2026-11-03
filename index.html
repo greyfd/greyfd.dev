@@ -1,50 +1,83 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
     <head>
-        <title>greyfd.dev</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Greyson Dobbels | Personal Website</title>
+        <meta name="description" content="Personal website of Greyson Dobbels, with an introduction, technical skills, projects, and contact information.">
+        <link rel="canonical" href="https://greyfd.dev/">
         <link rel="stylesheet" href="style.css">
+
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="greyfd.dev">
+        <meta property="og:url" content="https://greyfd.dev/">
+        <meta property="og:title" content="Greyson Dobbels | Personal Website">
+        <meta property="og:description" content="Personal website of Greyson Dobbels, with an introduction, technical skills, projects, and contact information.">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Greyson Dobbels | Personal Website">
+        <meta name="twitter:description" content="Personal website of Greyson Dobbels, with an introduction, technical skills, projects, and contact information.">
+
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://greyfd.dev/#website",
+              "url": "https://greyfd.dev/",
+              "name": "greyfd.dev",
+              "publisher": {
+                "@id": "https://greyfd.dev/#person"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://greyfd.dev/#person",
+              "name": "Greyson Dobbels",
+              "url": "https://greyfd.dev/",
+              "sameAs": [
+                "https://github.com/greyfd"
+              ]
+            }
+          ]
+        }
+        </script>
     </head>
     <body>
-        <nav>
-            <h1>greyfd.dev</h1>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-        </nav>
+        <header>
+            <h1><a href="/" class="site-name">greyfd.dev</a></h1>
+            <nav aria-label="Main navigation">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+            </nav>
+        </header>
 
         <main>
-            <section id="about">
-                <h2>About Me</h2>
+            <section id="about" aria-labelledby="about-heading">
+                <h2 id="about-heading">About Me</h2>
                 <p>
-                My name is Greyson Dobbels. I'm a 17-year-old highschool junior with large aspirations for my future. If I had only three words to describe myself, I would say <strong>driven</strong>, <strong>ambitious</strong>, and <strong>passionate</strong>. 
+                    My name is Greyson Dobbels. I'm a 17-year-old highschool junior with large aspirations for my future. If I had only three words to describe myself, I would say <strong>driven</strong>, <strong>ambitious</strong>, and <strong>passionate</strong>.
+                </p>
             </section>
 
-            <section id="skills">
-                <h2>Technical Skills</h2>
+            <section id="skills" aria-labelledby="skills-heading">
+                <h2 id="skills-heading">Technical Skills</h2>
                 <ul>
                     <li>Languages: Java and Swift</li>
                     <li>Tools: Git</li>
                 </ul>
             </section>
 
-            <section id="projects">
-                <h2>Projects</h2>
-                <ul>
-                    <div>
-                    <h3>FreshLife</h3>
-                    <p>In tandem with a business incubator class at my high school, I developed their vision of an iOS app to track food and its expiration dates to achieve our large-scale goal of reducing food waste.</p>
-                    <p>View it <a href="https://github.com/greyfd/FreshlifeOG">here</a>.</p>
-                    </div>
+            <section id="projects" aria-labelledby="projects-heading">
+                <h2 id="projects-heading">Projects</h2>
+                <h3>FreshLife</h3>
+                <p>In tandem with a business incubator class at my high school, I developed their vision of an iOS app to track food and its expiration dates to achieve our large-scale goal of reducing food waste.</p>
+                <p>View it <a href="https://github.com/greyfd/FreshlifeOG">here</a>.</p>
+            </section>
 
-                    
-
-                </ul>
-
-
-            <section id="contact">
-                <h2>Contact</h2>
+            <section id="contact" aria-labelledby="contact-heading">
+                <h2 id="contact-heading">Contact</h2>
                 <p>
                     Find me on <a href="https://github.com/greyfd">GitHub</a>
                     or email me at <a href="mailto:contact@greyfd.dev">contact@greyfd.dev</a>.
@@ -53,8 +86,7 @@
         </main>
 
         <footer>
-            <p>&copy; 2025 greyfd.dev</p>
+            <p>&copy; 2026 greyfd.dev</p>
         </footer>
     </body>
-    <script src="script.js"></script>
 </html>

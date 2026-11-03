@@ -27,3 +27,9 @@ h3 {
     color: #8e96f0;
   }
 }
+
+a[target='_blank']:not(:empty):not(:has(*))::after {
+  content: "↗";
+  display: inline-block;
+  margin-inline-start: 0.125rem;
+}
