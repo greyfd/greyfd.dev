@@ -8,7 +8,7 @@ This sample shows how WebP images and a reusable icon look in a post. It uses ge
 
 ## Add a WebP image
 
-![An abstract sun above overlapping sage hills.](/images/blog/demo-landscape.webp)
+![An abstract sun above overlapping sage hills.](/images/blog/demo-landscape.webp){: width="1200" height="640" decoding="async"}
 
 *Caption: a local illustration in the site's colors.*
 
@@ -20,7 +20,7 @@ The bookmark icon {% include icons/bookmark.svg %} is decorative. The text carri
 
 ## Add another image
 
-![A simple stack of paper cards in charcoal, off-white, and sage.](/images/blog/demo-cards.webp)
+![A simple stack of paper cards in charcoal, off-white, and sage.](/images/blog/demo-cards.webp){: width="1200" height="640" loading="lazy" decoding="async"}
 
 *Caption: another local WebP image.*
 

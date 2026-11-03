@@ -3,10 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="color-scheme" content="light dark">
         <title>Greyson Dobbels | Personal Website</title>
         <meta name="description" content="The personal website of Greyson Dobbels, with a brief introduction and contact links.">
         <link rel="canonical" href="https://greyfd.dev/">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/style.css">
 
         <meta property="og:type" content="website">
         <meta property="og:site_name" content="greyfd.dev">
@@ -56,6 +57,7 @@
         </script>
     </head>
     <body>
+        <a class="skip-link" href="#main-content">Skip to content</a>
         <header>
             <a href="/" class="site-name">greyfd.dev</a>
             <nav aria-label="Main navigation">
@@ -64,7 +66,7 @@
             </nav>
         </header>
 
-        <main>
+        <main id="main-content" tabindex="-1">
             <section id="about" class="intro" aria-labelledby="about-heading">
                 <h1 id="about-heading">Hi, I'm Greyson.</h1>
                 <p>This is my personal site. I’m making it a place for things I’m curious about, notes I want to keep, and small updates from my life.</p>
@@ -77,7 +79,7 @@
 
             <section id="contact" aria-labelledby="contact-heading">
                 <h2 id="contact-heading">Find me elsewhere</h2>
-                <ul class="contact-links">
+                <ul class="contact-links" role="list">
                     <li>
                         <a href="https://github.com/greyfd">
                             <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
