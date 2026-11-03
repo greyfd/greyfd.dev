@@ -116,6 +116,23 @@ main {
   margin-bottom: 0.5rem;
 }
 
+.post-content img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 2rem 0 0.5rem;
+  border: 1px solid #dcdcd5;
+}
+
+.post-icon {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-inline: 0.2rem;
+  color: #526b55;
+  vertical-align: -0.2em;
+}
+
 .intro {
   margin: clamp(3rem, 10vw, 5rem) 0;
 }
@@ -223,6 +240,14 @@ a[target='_blank']:not(:empty):not(:has(*))::after {
 
   .post-date {
     color: #a3a69d;
+  }
+
+  .post-content img {
+    border-color: #3b3e37;
+  }
+
+  .post-icon {
+    color: #b7cca1;
   }
 
   .not-found-code {
