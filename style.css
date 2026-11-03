@@ -34,6 +34,15 @@ header {
   gap: 0.5rem 1rem;
 }
 
+header,
+header *,
+footer,
+footer * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
 .site-name {
   color: inherit;
   font-weight: 700;
@@ -86,6 +95,16 @@ a:visited {
   text-underline-offset: 0.15em;
 }
 
+::selection {
+  color: #273629;
+  background-color: #d7e4d1;
+}
+
+::-moz-selection {
+  color: #273629;
+  background-color: #d7e4d1;
+}
+
 a:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 3px;
@@ -118,6 +137,16 @@ a[target='_blank']:not(:empty):not(:has(*))::after {
   a:link,
   a:visited {
     color: #b7cca1;
+  }
+
+  ::selection {
+    color: #f4f6ef;
+    background-color: #526747;
+  }
+
+  ::-moz-selection {
+    color: #f4f6ef;
+    background-color: #526747;
   }
 
   footer {
