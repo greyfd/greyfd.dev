@@ -91,6 +91,22 @@ main {
   margin: clamp(3rem, 10vw, 5rem) 0;
 }
 
+.not-found {
+  margin: clamp(3rem, 10vw, 5rem) 0;
+}
+
+.not-found-code {
+  color: #526b55;
+  font-size: 0.875rem;
+}
+
+.not-found-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  margin-top: 0.75rem;
+}
+
 h1,
 h2,
 h3 {
@@ -174,6 +190,10 @@ a[target='_blank']:not(:empty):not(:has(*))::after {
   footer {
     border-color: #3b3e37;
     color: #a3a69d;
+  }
+
+  .not-found-code {
+    color: #b7cca1;
   }
 }
 
